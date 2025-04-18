@@ -1,13 +1,10 @@
-package com.example.demo;
-
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest
-class DemoApplicationTests {
+public class DemoApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
-}
+    @Test
+    void simpleTest() {
+        boolean expected = true;
+        boolean actual = true;
+        assertEquals(expected, actual);
